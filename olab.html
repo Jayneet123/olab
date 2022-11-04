@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLAB</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Linking css and js  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <!-- Bootstrap Link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <div class="content">
+        <p style="font-size: 20px; font-weight: bold;">Objective:</p><p> Solution of a quadratic equation (x² + 4x = 60) by completing
+            the square </p>
+            <p><b>Theory:</b> Completing the square is a method that is used for
+            converting a quadratic expression of the form ax2 + bx + c to the vertex
+            form a(x - h)2 + k. The most common application of completing the square
+            is in solving a quadratic equation. This can be done by rearranging the
+            expression obtained after completing the square: a(x + m)2 + n, such that
+            the left side is a perfect square trinomial. Completing the square method
+            is useful in:</p>
+            <ul>
+              <li>Converting a quadratic expression into vertex form.</li>
+              <li>Analysing at which point the quadratic expression has minimum/maximum value.</li>
+              <li>Graphing a quadratic function.</li>
+              <li>Solving a quadratic equation.</li>
+              <li>Deriving the quadratic formula.</li>
+            </ul>
+            Completing the square is a method in
+            algebra that is used to write a quadratic expression in a way such that it
+            contains the perfect square. In simple words, we can say that completing
+            the square is a process where consider a quadratic equation of the ax2 +
+            bx + c = 0 and change it to write it in the form a(x + p)2 + q = 0. This
+            method is generally used to find the roots of a quadratic equation.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLAB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <div class="content">
+      <p style="font-size: 20px;"><b>Procedure:</b> <br> </p>
+      <p><b>Method 1:</b><br> The formula for completing the square is: ax2 + bx +
+      c ⇒ a(x + m)2 + n where, m is any real number and n is a constant term.<br>
+      Instead of using the complex step-wise method for completing the square,
+      we can use the following simple formula to complete the square. To
+      complete the square in the expression ax2 + bx + c, first find:<br> m = b/2a
+      and n = c - (b2/4a) <br>Substitute these values in: ax2 + bx + c = a(x + m)2 +
+      n. <br></p>
+      <p><b>Method 2:</b><br> To apply the method of completing the square, we will follow
+      a certain set of steps. Given below is the process of completing the
+      square stepwise: <br> Step 1: Write the quadratic equation as x2 + bx + c.
+      (Coefficient of x2 needs to be 1.)<br> Step 2: Determine half of the
+      coefficient of x. <br>Step 3: Take the square of the number obtained in step
+      1.<br> Step 4: Add and subtract the square obtained in step 2 to the x2 term.<br>
+      Step 5: Factorize the polynomial and apply the algebraic identity x2 + 2xy
+      + y2 = (x + y)2 to complete the square.</p>
+  </div>
+  </body>
+</html>
