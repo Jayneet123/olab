@@ -3,6 +3,43 @@
     margin-left: 5%;
 }
 
-svg{
+/* svg{
     padding: 0px;
+    display: block;
+    position: relative;
 }
+
+rect{
+    cursor: move;
+} */
+
+
+.rect {
+    height: 150px;
+    width: 100px;
+    background-color: rgb(242, 14, 14);
+}
+.square2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(14, 14, 242);
+}
+
+.box {
+    border: 3px solid #666;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(25, 242, 14);
+    padding: 10px;
+    cursor: move;
+  }
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.box.over {
+    border: 3px dotted #666;
+  }
