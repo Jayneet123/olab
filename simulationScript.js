@@ -1,5 +1,5 @@
 const svg = document.getElementById('svg');
-let startX, startY, elementX, elementy, element;
+let startX, startY, elementX, elementY, element;
 
 svg.addEventListener('mousedown', e => {
  const className = e.target.getAttributeNS (null, 'class');
