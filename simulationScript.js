@@ -23,3 +23,8 @@ onMouseMove = e => {
 svg.addEventListener('mouseup', e => {
  svg.removeEventListener('mousemove', onMouseMove);
 });
+
+// import TweenMax from "gsap/TweenMax";
+// import Draggable from "gsap/Draggable"; 
+
+// Draggable.create(".draggable");
