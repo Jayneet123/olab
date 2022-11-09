@@ -13,15 +13,19 @@ rect{
     cursor: move;
 } */
 
-
-.rect {
+#square1 {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(33, 242, 14);
+}
+#rect {
     height: 150px;
     width: 100px;
     background-color: rgb(242, 14, 14);
 }
-.square2 {
+#square2 {
     height: 200px;
-    width: 200px;
+    width: 175px;
     background-color: rgb(14, 14, 242);
 }
 
@@ -35,11 +39,24 @@ rect{
   }
 
 .container1 {
+    padding: 100px;
+    padding-top: 0px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(5, 200px);
+    gap: 50px;
 }
 
 .box.over {
     border: 3px dotted #666;
   }
+
+.operators{
+    padding: 60px;
+    width: 100px;
+    height: 100px;
+    text-align: calc(50px,50px);
+}
+
+.equation{
+    display: flex;
+}

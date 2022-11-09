@@ -30,9 +30,16 @@
       });
     </script>
     <!--end of Navigation bar-->
-    This is simulation part <br />
-    x<sup>2</sup> + 4x = 60
-
+    <div class="content">
+      <p>Let us solve this equation given below:<br /></p> 
+      <p>x<sup>2</sup> + 4x = 60</p> 
+    </div>
+    <div class="equation">
+      <div style="padding-left: 170px;">x<sup>2</sup></div>
+      <div style="padding-left: 463px;">4x</div>
+      <div style="padding-left: 518px;">60</div>
+    </div>
+    
     <!--<div class="grid-container">
       <svg id="svg" width="100%" height="50%" viewbox="0 0 600 400" >
         <rect class="draggable" width="100" height="100" style="fill:rgb(255, 0, 0);stroke-width:3;stroke:rgb(0,0,0)" />
@@ -46,11 +53,13 @@
       <script src="simulationScript.js"></script>
     </div> -->
     <div class="container1">
-      <div draggable="true" class="box">1</div>
-      <div draggable="true" class="box">2</div>
-      <div draggable="true" class="box">3</div>
+      <div draggable="true" id = "square1" class="box">1</div>
+      <div class="operators">+</div>
+      <div draggable="true" id = "rect" class="box">2</div>
+      <div class="operators">=</div>
+      <div draggable="true" id = "square2" class="box">3</div>
     </div>
 
-    <div class="container">This is the down container</div>
+    <div class="container">Drag the red box to the green box. Therefore, adding x² and 4x and click on next </div>
   </body>
 </html>
