@@ -3,7 +3,7 @@ let smallSquare = document.getElementById('smallSquare');
 async function typeSentence(sentence, eleRef, delay = 100) {
   const letters = sentence.split("");
   let i = 0;
-  while(i < letters.length) {
+  while (i < letters.length) {
     await waitForMs(delay);
     $(eleRef).append(letters[i]);
     i++
@@ -14,7 +14,7 @@ function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-typeSentence("Drag the red box to the green box. Therefore, adding x² and 4x.","#sentence")
+typeSentence("Drag the red box to the green box. Therefore, adding x² and 4x.", "#sentence")
 document.addEventListener('DOMContentLoaded', (event) => {
 
   function handleDragStart(e) {
@@ -77,34 +77,35 @@ document.addEventListener('DOMContentLoaded', (event) => {
       document.getElementById("rectAfterMerge").style.display = "grid";
       document.getElementById('square1').style.display = "none";
       document.getElementById('sentence').textContent = " ";
-      typeSentence("Now we try to see how to make it a complete square.","#sentence");
+      typeSentence("Now we try to see how to make it a complete square.", "#sentence");
       console.log("Success");
-      // smallSquare.style.display = "grid";
+      smallSquare.style.display = "grid";
+      //Animations 
+      let start = Date.now(); // remember start time
+
+      let timer = setInterval(function () {
+        // how much time passed from the start?
+        let timePassed = Date.now() - start;
+
+        if (timePassed >= 20000) {
+          clearInterval(timer); // finish the animation after 2 seconds
+          return;
+        }
+
+        // draw the animation at the moment timePassed
+        draw(timePassed);
+
+      }, 20);
+
+      // as timePassed goes from 0 to 2000
+      // left gets values from 0px to 400px
+      function draw(timePassed) {
+        smallSquare.style.paddingLeft = timePassed / 5 + 'px';
+      }
+
     }
     return false;
   }
 });
 
-//Animations 
-let start = Date.now(); // remember start time
-
-let timer = setInterval(function() {
-  // how much time passed from the start?
-  let timePassed = Date.now() - start;
-
-  if (timePassed >= 2000) {
-    clearInterval(timer); // finish the animation after 2 seconds
-    return;
-  }
-
-  // draw the animation at the moment timePassed
-  draw(timePassed);
-
-}, 20);
-
-// as timePassed goes from 0 to 2000
-// left gets values from 0px to 400px
-function draw(timePassed) {
-  smallSquare.style.left = timePassed / 5 + 'px';
-}
 
