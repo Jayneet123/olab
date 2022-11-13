@@ -3,31 +3,24 @@
     margin-left: 5%;
 }
 
-/* svg{
-    padding: 0px;
-    display: block;
-    position: relative;
-}
-
-rect{
-    cursor: move;
-} */
-
-#square1 {
+#square1{
     height: 150px;
     width: 150px;
     background-color: rgb(33, 242, 14);
 }
+
 #rect {
     height: 150px;
     width: 100px;
     background-color: rgb(242, 14, 14);
 }
-#square2 {
-    height: 200px;
-    width: 175px;
+
+#square2{
+    height: 200px; 
+    width: 175px; 
     background-color: rgb(14, 14, 242);
 }
+
 #rectAfterMerge{
     height: 200px;
     width: 200px;
@@ -39,9 +32,7 @@ rect{
     grid-template-columns: 150px 50px;
     /* border: 1px solid black; */
 }
-#rectAfterMerge > div{
-    
-}
+
 #rectAfterMerge > .rectPart{
     background-color: rgb(242, 14, 14);
 }
@@ -76,4 +67,22 @@ rect{
 
 .equation{
     display: flex;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: inherit;
+    background-color: white;
+    margin-left: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
 }
