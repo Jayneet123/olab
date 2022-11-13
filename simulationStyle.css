@@ -28,6 +28,23 @@ rect{
     width: 175px;
     background-color: rgb(14, 14, 242);
 }
+#rectAfterMerge{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template-areas:
+    "rect squareSmall"
+    "square1  rect";
+    grid-template-rows: 50px 150px;
+    grid-template-columns: 150px 50px;
+    /* border: 1px solid black; */
+}
+#rectAfterMerge > div{
+    
+}
+#rectAfterMerge > .rectPart{
+    background-color: rgb(242, 14, 14);
+}
 
 .box {
     border: 3px solid #666;

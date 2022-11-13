@@ -1,5 +1,6 @@
+// document.getElementById('rectAfterMerge').style.display = "none";
 document.addEventListener('DOMContentLoaded', (event) => {
-
+    
     function handleDragStart(e) {
       this.style.opacity = '0.4';
     }
@@ -60,7 +61,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // }
     if(dragSrcEl.id !== document.getElementById('square1')){
       const data = e.dataTransfer.getData('squareOnRect');
-      e.target.appendChild(document.getElementById(data));
+      document.getElementById("rect").style.backgroundColor = "white";
+      document.getElementById('rect').style.border = "white";
+      document.getElementById('plusOperator').textContent = ' ';
+      document.getElementById('xsquare').append('+ 4x');
       console.log("Success");
     }
     

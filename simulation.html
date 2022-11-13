@@ -35,7 +35,7 @@
       <p>x<sup>2</sup> + 4x = 60</p> 
     </div>
     <div class="equation">
-      <div style="padding-left: 170px;">x<sup>2</sup></div>
+      <div id ="xsquare" style="padding-left: 170px;">x<sup>2</sup></div>
       <div style="padding-left: 463px;">4x</div>
       <div style="padding-left: 518px;">60</div>
     </div>
@@ -53,11 +53,17 @@
       <script src="simulationScript.js"></script>
     </div> -->
     <div class="container1">
-      <div draggable="true" id = "square1" class="box">1</div>
-      <div class="operators">+</div>
-      <div draggable="true" id = "rect" class="box">2</div>
+      <div draggable="true" id = "square1" class="box"></div>
+      <div class="operators" id="plusOperator">+</div>
+      <div draggable="true" id = "rect" class="box"></div>
+      <!-- <div draggable="true" id = "rectAfterMerge">
+        <div class="rectPart"></div>
+        <div></div>
+        <div style="background-color:  rgb(25, 242, 14);"></div>
+        <div class="rectPart"></div>
+      </div> -->
       <div class="operators">=</div>
-      <div draggable="true" id = "square2" class="box">3</div>
+      <div draggable="true" id = "square2" class="box"></div>
     </div>
 
     <div class="container">Drag the red box to the green box. Therefore, adding x² and 4x and click on next </div>
