@@ -71,40 +71,48 @@ document.addEventListener('DOMContentLoaded', (event) => {
       // document.getElementById('rect').style.border = "white";
       document.getElementById('rect').style.display = 'none';
       document.getElementById('plusOperator').textContent = ' ';
+      // document.getElementById('equalOperator').style.marginLeft= '-40%';
       document.getElementById('fourx').textContent = ' ';
       document.getElementById('sixty').style.paddingLeft = '255px';
       document.getElementById('xsquare').append('+ 4x');
+      document.getElementById('xsquare').style.paddingLeft = '420px';
       document.getElementById("rectAfterMerge").style.display = "grid";
       document.getElementById('square1').style.display = "none";
       document.getElementById('sentence').textContent = " ";
       typeSentence("Now we try to see how to make it a complete square.", "#sentence");
       console.log("Success");
-      smallSquare.style.display = "grid";
-      //Animations 
-      let start = Date.now(); // remember start time
-
-      let timer = setInterval(function () {
-        // how much time passed from the start?
-        let timePassed = Date.now() - start;
-
-        if (timePassed >= 20000) {
-          clearInterval(timer); // finish the animation after 2 seconds
-          return;
-        }
-
-        // draw the animation at the moment timePassed
-        draw(timePassed);
-
-      }, 20);
-
-      // as timePassed goes from 0 to 2000
-      // left gets values from 0px to 400px
-      function draw(timePassed) {
-        smallSquare.style.paddingLeft = timePassed / 5 + 'px';
+      let square = document.querySelector("#smallSquare");
+      square.style.display = "grid";
+      square.addEventListener('click',moveRight);
+      function moveRight(){
+        square.style.left = square.offsetLeft + 1000+'px';
       }
+      
+    //   //Animations 
+    //   let start = Date.now(); // remember start time
+
+    //   let timer = setInterval(function () {
+    //     // how much time passed from the start?
+    //     let timePassed = Date.now() - start;
+
+    //     if (timePassed >= 20000) {
+    //       clearInterval(timer); // finish the animation after 2 seconds
+    //       return;
+    //     }
+
+    //     // draw the animation at the moment timePassed
+    //     draw(timePassed);
+
+    //   }, 20);
+
+    //   // as timePassed goes from 0 to 2000
+    //   // left gets values from 0px to 400px
+    //   function draw(timePassed) {
+    //     smallSquare.style.paddingLeft = timePassed / 5 + 'px';
+    //   }
 
     }
-    return false;
+    // return false;
   }
 });
 

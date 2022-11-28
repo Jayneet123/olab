@@ -37,6 +37,23 @@
     background-color: rgb(242, 14, 14);
 }
 
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 200%;
+    }
+  }
+
+#smallSquare {
+    animation-name: slidein;
+    animation-duration: 4s;
+    margin-left: 200%;
+    border: none;
+}
+
 .box {
     border: 3px solid #666;
     height: 150px;
