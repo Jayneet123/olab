@@ -19,7 +19,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    
   </head>
   <body>
     <!--Navigation bar-->
@@ -31,28 +30,37 @@
     </script>
     <!--end of Navigation bar-->
     <div class="content">
-      <p>Let us solve this equation given below:<br /></p> 
-      <p>x<sup>2</sup> + 4x = 60</p> 
+      <p>Let us solve this equation given below:<br /></p>
+      <p>x<sup>2</sup> + 4x = 60</p>
     </div>
     <div class="equation">
-      <div id ="xsquare" style="padding-left: 170px;">x<sup>2</sup></div>
-      <div id="fourx" style="padding-left: 463px;">4x</div>
-      <div id = "sixty" style="padding-left: 518px;">60</div>
+      <div id="xsquare" style="padding-left: 170px">x<sup>2</sup></div>
+      <div id="fourx" style="padding-left: 463px">4x</div>
+      <div id="sixty" style="padding-left: 518px">60</div>
     </div>
 
     <div class="container1">
-      <div id="smallSquare" class="box" style="display:none;height: 50px; width:50px; background-color: yellow;"></div>
-      <div draggable="true" id = "square1" class="box"></div>
-      <div draggable="true" id = "rectAfterMerge">
+      <div
+        id="smallSquare"
+        class="box"
+        style="
+          display: none;
+          height: 50px;
+          width: 50px;
+          background-color: yellow;
+        "
+      ></div>
+      <div draggable="true" id="square1" class="box"></div>
+      <div draggable="true" id="rectAfterMerge">
         <div class="rectPart"></div>
         <div></div>
-        <div style="background-color:  rgb(25, 242, 14);"></div>
+        <div style="background-color: rgb(25, 242, 14)"></div>
         <div class="rectPart"></div>
       </div>
       <div class="operators" id="plusOperator">+</div>
-      <div draggable="true" id = "rect" class="box"></div>
+      <div draggable="true" id="rect" class="box"></div>
       <div class="operators" id="eaualOperator">=</div>
-      <div draggable="true" id = "square2" class="box"></div>
+      <div draggable="true" id="square2" class="box"></div>
     </div>
     <script src="index.js"></script>
     <!-- <div class="container" id="textBelow" style="font-size: larger;">Drag the red box to the green box. Therefore, adding x² and 4x. </div> -->
@@ -61,5 +69,4 @@
       <span class="input-cursor"></span>
     </div>
   </body>
-
 </html>
